@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../shared/css/base.css" />
 </head>
 
 <body>
@@ -11,21 +10,26 @@
     <style>
         .container {
             width: 400px;
+            float: left;
+        }
+        .container#container2 {
+            float: right;
         }
         .input-line {
             width: 100%;
             padding: 1em 0;
             margin: 1em 0;
         }
+        img {
+            max-height: 200px;
+        }
     </style>
 
     <div class="container" id="container"></div>
-    
-    <br>
-    <br>
 
-    <div id="container2"></div>
+    <div class="container" id="container2"></div>
 
+    <script>var test;</script>
     <script src="../../build/react.js"></script>
     <script src="../../build/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
